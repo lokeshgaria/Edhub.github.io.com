@@ -43,7 +43,7 @@ margin: 2px;
     padding: 44px;
     }
 iframe  {
-    width: 284px;
+    width: 200px;
     border-radius: 12px;
     height: 150px;
     -webkit-box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.75);
@@ -51,7 +51,7 @@ iframe  {
 box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.75);
 margin-bottom: 22px;
 }
-/************                 Section4              **********/
+/************           Section4              **********/
 .section4{
     height: 100vh;
 }
@@ -94,6 +94,8 @@ transition: 0.8s;
     .h3, h3 {
         font-size: 1.75rem;
         font-weight: bold;
+        padding-top: 23px;
+        letter-spacing: 3px;
     }
 
     #section1-right {
@@ -117,6 +119,12 @@ transition: 0.8s;
 
     #copyright{
         font-size: 16px;
+    }
+
+    iframe  {
+        width: 300px;
+       
+       
     }
  }
 
