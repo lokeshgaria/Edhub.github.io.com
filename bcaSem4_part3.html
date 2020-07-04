@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  Bootstrap cdn   --------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>BCA | Sem 4 </title>
+
+    <!---------------  Font Awesome    ------------>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------------------  Google FONTS    ------------>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+
+    <!----------------  EXTERNAL STYLE SHEEET  -------->
+    <link rel="stylesheet" href="bcaStyle.css">
+    <!------------          INTERNAL CSS      ---------------->
+    <style>
+        /*********** HTML css   ***********/
+        html {
+            scroll-behavior: smooth;
+
+            transition: 1s;
+        }
+
+
+        /*************** All anchor tag (links) Css  **************/
+        a {
+            text-decoration: none !important;
+            color: white !important;
+
+        }
+
+        /****************    Math Image Css              ********************/
+        #img-container-1 {
+            background: linear-gradient(rgba(6, 150, 107, 0.39), rgba(6, 128, 150, 0.39)), url(" https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            height: 100%;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px;
+        }
+
+
+        /****************   JAVA Image Css              ********************/
+        #img-container-2 {
+            background: linear-gradient(rgba(4, 61, 94, 0.589), rgba(6, 56, 150, 0.507)), url("https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    image's paragrph Css              ********************/
+        .img-p:hover,
+        .img-p:active,
+        .img-p:focus {
+            transform: translateY(-18px);
+            transition: 0.5s;
+        }
+
+        /****************     image Paragrph Css       ********************/
+        .img-p {
+            border-bottom: 2px solid white;
+            width: 76%;
+            padding-top: 43px;
+            font-size: 3rem;
+
+            padding-bottom: 0px;
+            margin-left: 38px;
+            margin-bottom: 83px;
+        }
+
+        /****************    Web -Tech  Image Css              ********************/
+        #img-container-3 {
+            background: linear-gradient(rgba(207, 205, 74, 0.274), rgba(192, 212, 81, 0.315)), url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 ");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    Software Engineering Image Css        ***************/
+        #img-container-4 {
+            background: linear-gradient(rgba(32, 212, 77, 0.534), rgba(62, 102, 24, 0.514)), url(" https://images.pexels.com/photos/3912948/pexels-photo-3912948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    Computer Networking  Image Css     ***************/
+        #img-container-5 {
+            background: linear-gradient(rgba(18, 77, 187, 0.411), rgba(42, 40, 192, 0.603)), url(" https://images.pexels.com/photos/1624895/pexels-photo-1624895.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 ");
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************   Iframe css (Youtube videos)     ********************/
+        iframe {
+            -webkit-box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            -moz-box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            width: 290px;
+            height: 200px;
+
+        }
+
+        /****************   Iframe css on hover   ********************/
+        iframe:active,
+        iframe:hover {
+            transform: translateY(-15px);
+            transition: 0.5s;
+            border-radius: 18px;
+        }
+
+        /****************    Main Heading css  (BCA HEADING)     *****************/
+        #main-heading {
+            color: #050505;
+            background: #FFFFFF;
+            text-shadow: 2px 5px 6px #8232CE;
+
+        }
+
+        /****************    videos paragraph css       ********************/
+        .topic-para {
+            color: #1d1c1c;
+            background: #FFFFFF;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+        }
+
+        #scroll {
+            position: relative;
+            top: -34px;
+            cursor: pointer;
+            left: -5%;
+        }
+
+        footer {
+               position: relative;
+               top: 29px;
+                height: 10vh;
+                padding-top: 15px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <!-------------------- Nabvar  starts here --------------------->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+        <a class="navbar-brand text-white mx-5" href="index.html">EdHub <i class="fa fa-graduation-cap"
+                aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <i class="   navbar-toggler-icon " aria-hidden="true" id="navbar-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">ContactMe <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">About_Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Semester
+                    </a>
+                    <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-warning" href="bcaSem1.html">BCA Sem 1</a>
+                        <a class="dropdown-item text-warning" href="bcaSem2.html">BCA Sem 2</a>
+                        <a class="dropdown-item text-warning" href="bcaSem3.html">BCA Sem 3</a>
+                        <a class="dropdown-item text-warning" href="bcaSem4.html">BCA Sem 4</a>
+                        <a class="dropdown-item text-warning" href="bcaSem5.html">BCA Sem 5</a>
+                        <a class="dropdown-item text-warning" href="bcaSem6.html">BCA Sem 6</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-warning" href="index.html">Home</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#">Register</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-------------------- Nabvar  Ends here --------------------->
+
+    <!-----------------section 1   starts here    -------------->
+    <div class="container" id="section-1">
+        <h1 class="my-5" id="main-heading">Bachelor of Computer Application (B.C.A)</h1>
+        <hr>
+        <h4>B.C.A : Fourth Semester</h4>
+
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <!------------  Maths  Image ------------------->
+
+                    <div id="img-container-1">
+                        <a href=" bcaSem4_Part1.html" target="_blank">
+                            <p class="text-white  text-center    img-p">Maths</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  java  Image ------------------->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div id="img-container-2">
+                        <a href=" bcaSem4_Part1.html" target="_blank">
+                            <p class="text-center text-white img-p">Java</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  web-tech  Image ------------------->
+                <div class="col-lg-4  col-md-6 col-12">
+                    <div id="img-container-3">
+                        <a href="bcaSem4_part2.html" target="_blank">
+                            <p class="img-p text-center text-white">Web-Tech</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!------------  software Engineering  Image ------------------->
+            <div class="row my-5">
+                <div class="col-lg-6  col-md-6 col-12">
+                    <div id="img-container-4">
+                        <a href="bcaSem4_part2.html" target="_blank" >
+                            <p class=" text-center text-white img-p text-capitalize">software engineering</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  Computer networking  Image ------------------->
+                <div class="col-lg-6 col-md-6  col-12">
+                    <div id="img-container-5">
+                      <a href="#section1" > <p class=" text-center text-white img-p text-capitalize">Computer Networking</p></a> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <h1 class="my-5">Programme Syllabus </h1>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <a href="https://www.cpj.edu.in/wp-content/uploads/2018/05/BCA-Syllabus.pdf"><input type="button"
+                        value="Download syllabus !!" class="btn btn-primary my-5"> </a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <section id="section1">
+        <div class="container">
+            <h4>B.C.A : Fourth Semester <span class="text-warning"> Web- Techonlogies [IV]</span> </h4>
+            <hr>
+            <div class="container">
+                <h3 class="text-center">Computer Networking  [IV]Syllabus</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-12  my-5">
+                        <!------------  Web-tech Syllabus   Image  ------------->
+                        <img src="syllabus/CN.png" alt="web-tag Syllabus" class="w-60 img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class=" ">Unit 1 - Basic Concepts</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/x7CNq4wWgI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para">1 .Data Communication</p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/GNhLl0tMToE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Distributed Processing</p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/uDulBxDb7GM?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Topologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/KPiKMobVcO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Transmission Modes </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/1TDZVhlELo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 5 .  Categories of Network </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/Dppl6iA2G8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . OSI  Model </p>
+                        </div>
+                    </div>
+
+                    <!-----ROW 3  -->
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/gUOlE3If3yk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 7 . TCP / IP Model</p>
+                        </div>
+ 
+                </div>
+            </div>
+            <!---------------    HTML PART BEGINS HERE    ----- -->
+
+            <div class="container">
+                <h3 class="my-3">Unit-1 .  Models : Layers & Their Functions</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/3s4yWb8izVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para">1 . Application Layer </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/cj4OxZRJUdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Presentaion Layer </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/2Abjxmp7TfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Session Layer </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/kAty4mKczEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 4 .  Transport Layer </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/rW1jPlYgp_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Network Layer </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/JRgmPco0KWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 6 .  Data Link Layer</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/lg-f92uY1Lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para">7 .  Physical Layer </p>
+                        </div>
+    
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/oW2b4u9iWoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para">8 .  Difference B/W TCP/ IP Model </p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            <!---------------   Intermidiate  HTML PART BEGINS HERE    ----- -->
+
+            <div class="container">
+                <h3 class="my-3">Unit-1 .Digital Transmission : Interfaces and Modem</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/15BoMl1pSgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction to DTE and DCE </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/9w7Mk11zYtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="topic-para"> 2 .  Introduction to Modem </p>
+                        </div>
+
+                        
+                    </div>
+                    <h3 class=" ">Unit 1 -  Transmission Medium : Guided and Unguided </h3>
+                     <hr>
+                     <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/xHyJNkiGRd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para">1 . Guided Medium</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/cLlwVlNroCY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . Unguided Medium </p>
+                            </div>
+                    <!--------  UNIT 1  Ends here  ----->
+
+                    <!--------  UNIT 2  Starts here  ----->
+                    <div class="container my-5">
+                        <h3 class=" ">Unit 2 -   Telephony : Error Detection and Correction
+                        </h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/UAKok0wg1p8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="topic-para">1 .  Multiplexing </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/U7-h2hyM1Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="topic-para"> 2 . Error detection and Correction </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/U09cNsiYpc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="topic-para"> 3 .  Single Parity Check</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Row -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4  col-sm-4  col-12   ">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/f5_C7ui6yOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="topic-para"> 4 .  Check Sum </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/gCrENXb24ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="topic-para"> 5 .  Cyclic Redundancy Check </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/TbRjVOLnwko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="topic-para"> 6 .  HDLC </p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="container">
+                        <hr>
+                        <h3> Data Link control Protocols  </h3>
+                        <hr>
+
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/yNedVgNyE8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para">1 .  Various Flow control</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/7GhmuVilPF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . Synchronous  Protocol </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/WYM9nFYnYAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 3 . Pure ALOHA </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/v_z888gQWq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 4 .  CSMA / CD in Computer Network</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/IftFvfSywCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 5 .  CSMA / CA in Computer Network</p>
+                            </div>
+
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-5">
+                    <hr>
+                    <h3 class=" "> Integrated Services Digital Network </h3>
+                    <hr>
+                    <!-- Firest  Row -->
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/nhupbJ8t4N4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para">1 . Introduction   </p>
+                            </div>
+                <!--------------      UNIT -2 ENDS HERE   ------------->
+
+                <!------------ UNIT 3 ------------>
+                <div class="container my-5">
+                    <hr>
+                    <h3 class=" ">Unit 3 - Introduction to Network Devices  </h3>
+                    <hr>
+                    <!-- Firest  Row -->
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/mf4bRP_puNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para">1 .  Repeater</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/dDP36_ZBs6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 2 .  Bridges</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/xii-rf9YwrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 3 .  Gateway </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/JhBnOamc_8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 4 .  Routers</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/_ISu9f8ofZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 5 .  IP Addressing </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/5ZuP5qjbKSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 6 .  Distance Vector Protocol</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/Y8lFrus3Dzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p class="topic-para"> 7 .  Link State Routing Protocol </p>
+                            </div>
+                        </div>
+
+
+                     
+                        <!-----------------UNIT 4  Ends  here    -------------->
+    </section>
+    <!-----------------section 1   Ends  here    -------------->
+
+     
+    <!-----------------                           Footer-           ------------->
+    <footer class=" bg-dark text-white  text-center">
+        <h3 class="text-center  "> &copy; Copyright to EDhub<i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+        <a href="#navbar"><i class=" fa-2x fa fa-level-up float-right mr-0 my-0" aria-hidden="true" id="scroll"></i></a>
+    </footer>
+ <!-------------- bootstrap 4 cdn ---------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

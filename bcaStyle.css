@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    background-color: black;
+}
+.bg-dark{
+    background-color:  rgb(116, 21, 194)!important; 
+}
+ 
+.btn-primary{
+    border: 0;
+    font-size: 15px;
+    font-family: "GothamSSm Book",Arial,sans-serif;
+    min-width: 160px;
+    color: #fff;
+    vertical-align: middle;
+    padding: 11px 20px;
+    height: 44px;
+    border-radius: 32.4px;
+    box-shadow: 0 2px 3px 0 rgba(91,22,170,.3);
+    background-image: linear-gradient(to left,#8c3fff,#5c72ff);
+     
+}
+hr{
+    background-color: rgb(173, 165, 165);
+}
+ footer{
+     height: 7vh;
+   
+ }

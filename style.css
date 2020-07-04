@@ -1,0 +1,77 @@
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 90vh;
+    padding: 62px;
+    margin-top: 22px;
+}
+  
+ 
+#navbar-icon{
+margin: 2px;
+}
+
+.bg-dark{
+    background-color:  rgb(116, 21, 194)!important; 
+}
+ 
+.btn-primary{
+    border: 0;
+    font-size: 15px;
+    font-family: "GothamSSm Book",Arial,sans-serif;
+    min-width: 160px;
+    color: #fff;
+    vertical-align: middle;
+    padding: 11px 20px;
+    height: 44px;
+    border-radius: 32.4px;
+    box-shadow: 0 2px 3px 0 rgba(91,22,170,.3);
+    background-image: linear-gradient(to left,#8c3fff,#5c72ff);
+     
+}
+
+/************                 Section1                 **********/
+#section1{
+    margin-top: 60px;
+    ;
+}
+
+
+#section1-right{
+    padding: 44px;
+    }
+iframe  {
+    width: 184px;
+    border-radius: 12px;
+    height: 90px;
+    -webkit-box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.75);
+margin-bottom: 22px;
+}
+/************                 Section4              **********/
+.section4{
+    height: 100vh;
+}
+.fa-2x{
+    position: relative;
+    left: 20px;
+    margin-left: 12px;
+}
+.fa-2x:hover{
+transform: translateY(-10px);
+color: white;
+transition: 0.8s;
+}
+ hr{
+     background-color: #fff;
+ }
+ img{
+     border-radius: 7px;
+ }
+ a{
+     color: white;
+ }
+

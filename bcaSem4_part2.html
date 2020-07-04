@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  Bootstrap cdn   --------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>BCA | Sem 4 </title>
+
+    <!---------------  Font Awesome    ------------>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------------------  Google FONTS    ------------>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+
+    <!----------------  EXTERNAL STYLE SHEEET  -------->
+    <link rel="stylesheet" href="bcaStyle.css">
+    <!------------          INTERNAL CSS      ---------------->
+    <style>
+        /*********** HTML css   ***********/
+        html {
+            scroll-behavior: smooth;
+
+            transition: 1s;
+        }
+
+
+        /*************** All anchor tag (links) Css  **************/
+        a {
+            text-decoration: none !important;
+            color: white !important;
+
+        }
+
+        /****************    Math Image Css              ********************/
+        #img-container-1 {
+            background: linear-gradient(rgba(6, 150, 107, 0.39), rgba(6, 128, 150, 0.39)), url(" https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            height: 100%;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px;
+        }
+
+
+        /****************   JAVA Image Css              ********************/
+        #img-container-2 {
+            background: linear-gradient(rgba(4, 61, 94, 0.589), rgba(6, 56, 150, 0.507)), url("https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    image's paragrph Css              ********************/
+        .img-p:hover,
+        .img-p:active,
+        .img-p:focus {
+            transform: translateY(-18px);
+            transition: 0.5s;
+        }
+
+        /****************     image Paragrph Css       ********************/
+        .img-p {
+            border-bottom: 2px solid white;
+            width: 76%;
+            padding-top: 43px;
+            font-size: 3rem;
+
+            padding-bottom: 0px;
+            margin-left: 38px;
+            margin-bottom: 83px;
+        }
+
+        /****************    Web -Tech  Image Css              ********************/
+        #img-container-3 {
+            background: linear-gradient(rgba(207, 205, 74, 0.274), rgba(192, 212, 81, 0.315)), url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 ");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    Software Engineering Image Css        ***************/
+        #img-container-4 {
+            background: linear-gradient(rgba(32, 212, 77, 0.534), rgba(62, 102, 24, 0.514)), url(" https://images.pexels.com/photos/3912948/pexels-photo-3912948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    Computer Networking  Image Css     ***************/
+        #img-container-5 {
+            background: linear-gradient(rgba(18, 77, 187, 0.411), rgba(42, 40, 192, 0.603)), url(" https://images.pexels.com/photos/1624895/pexels-photo-1624895.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 ");
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************   Iframe css (Youtube videos)     ********************/
+        iframe {
+            -webkit-box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            -moz-box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            width: 290px;
+            height: 200px;
+
+        }
+
+        /****************   Iframe css on hover   ********************/
+        iframe:active,
+        iframe:hover {
+            transform: translateY(-15px);
+            transition: 0.5s;
+            border-radius: 18px;
+        }
+
+        /****************    Main Heading css  (BCA HEADING)     *****************/
+        #main-heading {
+            color: #050505;
+            background: #FFFFFF;
+            text-shadow: 2px 5px 6px #8232CE;
+
+        }
+
+        /****************    videos paragraph css       ********************/
+        .topic-para {
+            color: #1d1c1c;
+            background: #FFFFFF;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+        }
+
+        #scroll {
+            position: relative;
+            top: -34px;
+            cursor: pointer;
+            left: -5%;
+        }
+
+        footer {
+               position: relative;
+               top: 29px;
+                height: 10vh;
+                padding-top: 15px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <!-------------------- Nabvar  starts here --------------------->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+        <a class="navbar-brand text-white mx-5" href="index.html">EdHub <i class="fa fa-graduation-cap"
+                aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <i class="   navbar-toggler-icon " aria-hidden="true" id="navbar-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">ContactMe <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">About_Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Semester
+                    </a>
+                    <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-warning" href="bcaSem1.html">BCA Sem 1</a>
+                        <a class="dropdown-item text-warning" href="bcaSem2.html">BCA Sem 2</a>
+                        <a class="dropdown-item text-warning" href="bcaSem3.html">BCA Sem 3</a>
+                        <a class="dropdown-item text-warning" href="bcaSem4.html">BCA Sem 4</a>
+                        <a class="dropdown-item text-warning" href="bcaSem5.html">BCA Sem 5</a>
+                        <a class="dropdown-item text-warning" href="bcaSem6.html">BCA Sem 6</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-warning" href="index.html">Home</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#">Register</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-------------------- Nabvar  Ends here --------------------->
+
+    <!-----------------section 1   starts here    -------------->
+    <div class="container" id="section-1">
+        <h1 class="my-5" id="main-heading">Bachelor of Computer Application (B.C.A)</h1>
+        <hr>
+        <h4>B.C.A : Fourth Semester</h4>
+
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <!------------  Maths  Image ------------------->
+
+                    <div id="img-container-1">
+                        <a href=" bcaSem4_Part1.html"  target="_blank">
+                            <p class="text-white  text-center    img-p">Maths</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  java  Image ------------------->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div id="img-container-2">
+                        <a href=" bcaSem4_Part1.html"  target="_blank">
+                            <p class="text-center text-white img-p">Java</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  web-tech  Image ------------------->
+                <div class="col-lg-4  col-md-6 col-12">
+                    <div id="img-container-3">
+                        <a href="#section1">
+                            <p class="img-p text-center text-white">Web-Tech</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!------------  software Engineering  Image ------------------->
+            <div class="row my-5">
+                <div class="col-lg-6  col-md-6 col-12">
+                    <div id="img-container-4">
+                        <a href="#section2">
+                            <p class=" text-center text-white img-p text-capitalize">software engineering</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  Computer networking  Image ------------------->
+                <div class="col-lg-6 col-md-6  col-12">
+                    <div id="img-container-5">
+                        <a href="bcaSem4_part3.html" target="_blank"><p class=" text-center text-white img-p text-capitalize">Computer Networking</p></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <h1 class="my-5">Programme Syllabus </h1>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <a href="https://www.cpj.edu.in/wp-content/uploads/2018/05/BCA-Syllabus.pdf"><input type="button"
+                        value="Download syllabus !!" class="btn btn-primary my-5"> </a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <section id="section1">
+        <div class="container">
+            <h4>B.C.A : Fourth Semester <span class="text-warning"> Web- Techonlogies [IV]</span> </h4>
+            <hr>
+            <div class="container">
+                <h3 class="text-center">Web- Techonlogies [IV]Syllabus</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-12  my-5">
+                        <!------------  Web-tech Syllabus   Image  ------------->
+                        <img src="syllabus/webtech.jpg" alt="web-tag Syllabus" class="w-60 img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class=" ">Unit 1 - (History of Internet) Theory Part</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/h8K49dD52WA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . History of Internet </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/J8hzJxb0rpc"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . What is w.w.w ?</p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/DA1mooP1J30"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . What is Search Engine ?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/wNlsMKUQSo4"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 .What is Newsgroup/ usenet ? </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/xr0wKGomc8k"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . What is Email Protocols? </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/w_CqYd8ALX0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . What is Web-Portal? </p>
+                        </div>
+                    </div>
+
+                    <!-----ROW 3  -->
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/BrXPcaRlBqo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 7 .What is a Browser ? </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/OvF_pnJ6zrY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 8 . How URL works ? </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/Y4cRx19nhJk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 9 . What is a Domain ? </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------    HTML PART BEGINS HERE    ----- -->
+
+            <div class="container">
+                <h3 class="my-3">Unit-1 . Introduction to HTML (Practical )</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="290" height="159"
+                                src="https://www.youtube.com/embed/8Nx6KnP-E_U?list=PLSzsOkUDsvds51lVJYzKWhqr4Ie6UHLx7"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159"
+                                src="https://www.youtube.com/embed/KVoZzHDr3bI?list=PLSzsOkUDsvds51lVJYzKWhqr4Ie6UHLx7"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Structure Text with HTML tags </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159"
+                                src="https://www.youtube.com/embed/TRxgalJKLlw?list=PLSzsOkUDsvds51lVJYzKWhqr4Ie6UHLx7"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . List in HTML (0rdered & Unordered) </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/gT26Y_VJmOM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 .Adding Image in HTML </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/j6qpFWuTYjs"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Links and Anchor tag </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/VjHXZkq69s8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Image Mapping in HTML </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------   Intermidiate  HTML PART BEGINS HERE    ----- -->
+
+            <div class="container">
+                <h3 class="my-3">Unit-1 . Intermidiate HTML (Practical )</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/dK27jWKtJxs"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction to Tables in HTML </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/D4jj3HHrnSU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Creating Form in HTML </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/1MK9qK0iCaY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Frame and Frameset in HTML </p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="290" height="159" src="https://www.youtube.com/embed/rukiS1Q1-xU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">4 . Adding Audio in HTML </p>
+                        </div>
+                    </div>
+                    <!--------  UNIT 1  Ends here  ----->
+
+                    <!--------  UNIT 2  Starts here  ----->
+                    <div class="container my-5">
+                        <h3 class=" ">Unit 2 - Introduction To JavaScript </h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="270" height="159"
+                                        src="https://www.youtube.com/embed/dlfrWbYk1v0?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . Introduction </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/O9by2KcR2v4"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 2 . Datatypes in JavaScript </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/vF4b1KFfA3A"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 3 . control Statements</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Row -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4  col-sm-4  col-12   ">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/M7Tzdjn8GNo"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 4 .Logical Operators in JavaScript </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/N8ap4k_1QEQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 5 . Define Functions in JavaScript. </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/Cda9N6C7l6Y"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 6 . Predefined JavaScript Functions </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4  col-sm-4  col-12   ">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/-P04pE6zRNE"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 7 . Objects in JavaScript </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12   ">
+                                    <iframe width="270" height="159" src="https://www.youtube.com/embed/mlxi1WUSO_8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 8 .Events and Event Listener in JavaScript </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <hr>
+                        <h3>Introduction to Cascading Style Sheets (Css) </h3>
+                        <hr>
+
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="270" height="159" src="https://www.youtube.com/embed/qKoajPPWpmo"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para">1 . Introduction to css</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="270" height="159"
+                                    src="https://www.youtube.com/embed/bHxGUfgbrY8?list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . INTRO to inline Css </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="270" height="159" src="https://www.youtube.com/embed/Ea6YcdgYsdo"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 3 .INTRO to Internal Css </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="270" height="159" src="https://www.youtube.com/embed/QT_lIti-8Zk"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 4 . INTRO to External Css </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="270" height="159" src="https://www.youtube.com/embed/QbpUgzOHRQo"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 5 . What are CSS selector </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="270" height="159" src="https://www.youtube.com/embed/u4dLB9NP3IA"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 6 . Classes and id's in Css </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------------      UNIT -2 ENDS HERE   ------------->
+
+                <!------------ UNIT 3 ------------>
+                <div class="container my-5">
+                    <hr>
+                    <h3 class=" ">Unit 3 - Introduction to DHTML </h3>
+                    <hr>
+                    <!-- Firest  Row -->
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                <iframe width="290" height="159" src="https://www.youtube.com/embed/a-_SKo17FKA"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para">1 . Introduction to DHTML </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="290" height="159" src="https://www.youtube.com/embed/mcQr8PsnZJg"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . Javascript with DHTML</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="290" height="159" src="https://www.youtube.com/embed/XD7fYLQeQIg"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 3 . Introduction to DOM </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="290" height="159" src="https://www.youtube.com/embed/F0-yR3RnXq4"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 4 . Filters and Transitions </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="290" height="159" src="https://www.youtube.com/embed/7lLnXnRjWrQ"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 5 . DHTML Events </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="290" height="159" src="https://www.youtube.com/embed/2vc9AK-zgXM"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 5 . Dynamically change Styles using JavaScript</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!------ ------------     UNIT 4    ------  ----------->
+                    <div class="container my-5">
+                        <h3 class=" ">Unit 4 - Introduction to WYSIWYG </h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="290" height="159" src="https://www.youtube.com/embed/8oCDsBX2gL4"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . About WYSIWYG</p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/oPkTasoJngA"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 2 . WYSIWYG Design tools </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="290" height="159" src="https://www.youtube.com/embed/ZbDkdu6eeUc"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 3 . Introduction to DreamWeaver</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Row -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4  col-sm-4  col-12   ">
+                                    <iframe width="290" height="159" src="https://www.youtube.com/embed/sh7fe05mUfA"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 4 . Web Hosting and Publishing </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="290" height="159" src="https://www.youtube.com/embed/P1JOn960gjQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 5 . INTRO to XML </p>
+                                </div>
+
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="290" height="159" src="https://www.youtube.com/embed/4ayeYwXuY7w"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 6 . Difference Betweeen HTML and XML</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-----------------UNIT 4  Ends  here    -------------->
+    </section>
+    <!-----------------section 1   Ends  here    -------------->
+
+    <!---------------------------------    SECTION  2         ----------------------------->
+
+    <section id="section2">
+        <div class="container">
+            <h4>B.C.A : Fourth Semester <span class="text-warning"> Software Engineering [IV]</span> </h4>
+            <hr>
+            <div class="container">
+                <h3 class="text-center"> Software Engineering [IV] Syllabus</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-12  my-5">
+                        <img src="syllabus/SE.png" alt="Software Engineering Syllabus" class="w-60 img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class=" ">Unit 1 - Introduction Software Engineering </h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/9CEOoueZS9c?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/7PnqtxkSLcI?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Software Crisis </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/XbfjNh1j3gk?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Software Processes </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/KhDcArr7qUg?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Software Lifecylce </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/kK8-fJJIs38?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Waterfall Model</p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/eb5lg-S9rYk?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Prototype & Evolutionary
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159"
+                                src="https://www.youtube.com/embed/Rcga_CL3qDs?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 7 . Spiral Model
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Software Requirement analysis & Specifications </h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/_dmLM3nMu2E"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . Requirement Engineering
+
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/IfmtqebAVrk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Requirement Elicitaion </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/e1uCfPVM9Ts"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Data Dictionaries </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/a-A5I8GbL-k"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . About SRS </p>
+                        </div>
+                    </div>
+
+
+
+                    <!--------  UNIT 2   Software Engineeering   ----->
+                    <div class="container my-5">
+                        <h3 class=" ">Unit 2 - Software Project Management Concepts </h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/0RmBrKxwCz8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . What is software project Management (1) </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/SrqiOo6w_Qs"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 2 . What is software project Management (2) </p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <h3> Software Project Planning</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="243" height="159" src="https://www.youtube.com/embed/xpcjXQBxDK8"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 1 . Project Planning </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/kdEx6nkiJv0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . Cocomo Model</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------ UNIT 2  Ends here ------------>
+                    <!------------ UNIT 3  software design ------------>
+                    <div class="container my-5">
+                        <h3 class=" ">Unit 3 - Software Design </h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/Hsc02suLZ8s"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . Cohesion & Coupling </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/WnHOgMeszWI"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 2 . Layer Arrangment</p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/fPyVUkG6Jeo"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 3 . Function Oriented Design </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4  col-sm-4  col-12   ">
+                                    <iframe width="250" height="159" src="https://www.youtube.com/embed/ckxo46zuvl8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 4 . Object Oriented Design </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---->
+                        <h3 class=" "> Software Metrices</h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="243" height="159" src="https://www.youtube.com/embed/_uD1TTjGQWI"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . Software Mangement </p>
+                                </div>
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="243" height="159"
+                                        src="https://www.youtube.com/embed/aOuBNrJ6S4I?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">2 . Token Count </p>
+                                </div>
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="243" height="159"
+                                        src="https://www.youtube.com/embed/mkG0dHuBioA?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . DataStructure Metrices </p>
+                                </div>
+
+
+                            </div>
+
+
+                            <!------ ------------     UNIT 4    ------  ----------->
+                            <div class="container my-5">
+                                <h3 class=" ">Unit 4 - Software Testing </h3>
+                                <hr>
+                                <!-- Firest  Row -->
+                                <div class="container">
+                                    <div class="row ">
+                                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/BQOJb7QIvL8" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para">1 . Software Testing </p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/WnHOgMeszWI" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 2 . Code Review</p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/CBtts8cMxTc" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para">3. Types of Testing </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/-CftDViMqT4" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 4. Functional & STructural Testing
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/waNvT_6_QNQ" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 5 . Debugging</p>
+                                        </div>
+                                    </div>
+
+                                    <!--Secod ROw-->
+
+                                    <!-- Second  Topic -->
+
+
+                                    <h3> Software Maintenance</h3>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/j67_AkLcIKg" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 1 . Management of Maintenance </p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/loG1VX2OP0k" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 2 . Managmnet Process </p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/mkG0dHuBioA?list=PL3oWeJK3GDfyHhD9JOBe-C3UO4o0OLFsk"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 3 . Reverse Engineering</p>
+                                        </div>
+                                    </div>
+                                    <!----------- --            Second Row    ---------->
+                                    <div class="row">
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/8D289A0hfgw" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 4 . Software Re-Engineering
+
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/dS8xEhl7WaE" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 5 . Confugiration Managment
+
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-4  col-sm-4  col-12">
+                                            <iframe width="243" height="159"
+                                                src="https://www.youtube.com/embed/YiYfdYnEopg" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <p class="topic-para"> 6 . Documentation</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+    </section>
+    <!-----------------                           Footer-           ------------->
+    <footer class=" bg-dark text-white  text-center">
+        <h3 class="text-center  "> &copy; Copyright to EDhub<i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+        <a href="#navbar"><i class=" fa-2x fa fa-level-up float-right mr-0 my-0" aria-hidden="true" id="scroll"></i></a>
+    </footer>
+ <!-------------- bootstrap 4 cdn ---------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
