@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  Bootstrap cdn   --------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>BCA | Sem 5 </title>
+
+    <!-- short icon--> 
+    <link rel="shortcut icon"
+        href=" https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTAcdLTqNjKgBi7Np1LYW3h0YOBItc4Xinb5Q&usqp=CAU"
+        type="image/x-icon">
+
+    <!---------------  Font Awesome    ------------>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------------------  Google FONTS    ------------>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+
+    <!----------------  EXTERNAL STYLE SHEEET  -------->
+    <link rel="stylesheet" href="bcaStyle.css">
+    <!------------          INTERNAL CSS      ---------------->
+    <style>
+        /*********** HTML css   ***********/
+        html {
+            scroll-behavior: smooth;
+            transition: 1s;
+        }
+
+        /*************** All anchor tag (links) Css  **************/
+        a {
+            text-decoration: none !important;
+            color: white !important;
+
+        }
+
+        /****************    Math Image Css              ********************/
+        #img-container-1 {
+            background: linear-gradient(rgba(6, 73, 54, 0.514), rgba(4, 66, 77, 0.589)), url("https://www.theschoolrun.com/sites/theschoolrun.com/files/styles/188-148/public/article_images/hardware_software_and_operating_system.jpg?itok=KYIso38d");
+            height: 100%;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px;
+        }
+
+        /****************   JAVA Image Css              ********************/
+        #img-container-2 {
+            background: linear-gradient(rgba(4, 61, 94, 0.589), rgba(6, 56, 150, 0.507)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8aXqcgbiF69-i5eZO21x2uFNt2xrZk2Zxbw&usqp=CAU");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    image's paragrph Css              ********************/
+        .img-p:hover,
+        .img-p:active,
+        .img-p:focus {
+            transform: translateY(-18px);
+            transition: 0.5s;
+        }
+
+        /****************     image Paragrph Css       ********************/
+        .img-p {
+            border-bottom: 2px solid white;
+            width: 76%;
+            padding-top: 43px;
+            font-size: 2rem;
+            padding-bottom: 0px;
+            margin-left: 38px;
+            margin-bottom: 83px;
+        }
+
+        /****************    Web -Tech  Image Css              ********************/
+        #img-container-3 {
+            background: linear-gradient(rgba(31, 31, 29, 0.274), rgba(35, 36, 34, 0.315)), url("https://glocalkhabar.com/wp-content/uploads/2019/08/Impact-of-eCommerce-On-Society.png");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    Software Engineering Image Css        ***************/
+        #img-container-4 {
+            background: linear-gradient(rgba(48, 53, 49, 0.534), rgba(39, 41, 37, 0.514)), url("https://devops.com/wp-content/uploads/2017/07/Successful-1280x720.jpg");
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************    Computer Networking  Image Css     ***************/
+        #img-container-5 {
+            background: linear-gradient(rgba(18, 77, 187, 0.411), rgba(42, 40, 192, 0.603)), url(" https://miro.medium.com/max/3060/1*rGiHBnlqf6-koapA2DzUoA.jpeg");
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            font-size: 4rem;
+            font-family: 'Pangolin', cursive;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /****************   Iframe css (Youtube videos)     ********************/
+        iframe {
+            -webkit-box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            -moz-box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            box-shadow: -1px 2px 25px -4px rgba(41, 40, 41, 1);
+            width: 290px;
+            height: 200px;
+
+        }
+
+        /****************   Iframe css on hover   ********************/
+        iframe:active,
+        iframe:hover {
+            transform: translateY(-15px);
+            transition: 0.5s;
+            border-radius: 18px;
+        }
+
+        /****************    Main Heading css  (BCA HEADING)     *****************/
+        #main-heading {
+            color: #050505;
+            background: #FFFFFF;
+            text-shadow: 2px 5px 6px #8232CE;
+
+        }
+
+        /****************    videos paragraph css       ********************/
+        .topic-para {
+            color: #1d1c1c;
+            background: #FFFFFF;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+        }
+
+        .col-12{
+            margin-bottom: 33px;
+        }
+
+ /* X-Small devices (portrait phones, less than 576px)*/
+ @media (max-width: 450.98px) { 
+  
+     
+
+ }
+
+
+        #scroll {
+            position: relative;
+            top: -34px;
+            cursor: pointer;
+            left: -5%;
+        }
+
+
+        footer {
+            position: relative;
+            top: 29px;
+            height: 10vh;
+            padding-top: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-------------------- Nabvar  starts here --------------------->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand text-white mx-5" href="index.html">EdHub <i class="fa fa-graduation-cap"
+                aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <i class="   navbar-toggler-icon " aria-hidden="true" id="navbar-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">ContactMe <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">About_Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Semester
+                    </a>
+                    <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-warning" href="bcaSem1.html">BCA Sem 1</a>
+                        <a class="dropdown-item text-warning" href="bcaSem2.html">BCA Sem 2</a>
+                        <a class="dropdown-item text-warning" href="bcaSem3.html">BCA Sem 3</a>
+                        <a class="dropdown-item text-warning" href="bcaSem4_Part1.html">BCA Sem 4</a>
+                        <a class="dropdown-item text-warning" href="bcasem5_Part1.html">BCA Sem 5</a>
+                        <a class="dropdown-item text-warning" href="bcaSem6.html">BCA Sem 6</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-warning" href="index.html">Home</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#">Register</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-------------------- Nabvar  Ends here --------------------->
+
+    <!-----------------section 1   starts here    -------------->
+    <div class="container" id="section-1">
+        <h1 class="my-5" id="main-heading">Bachelor of Computer Application (B.C.A)</h1>
+        <hr>
+        <h4>B.C.A : Fifth Semester</h4>
+
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <!------------  Maths  Image ------------------->
+
+                    <div id="img-container-1">
+                        <a href="#maths">
+                            <p class="text-warning text-capitalize  text-center    img-p">Operating System</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  java  Image ------------------->
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div id="img-container-2">
+                        <a href="#java">
+                            <p class="text-center text-white img-p">Computer graphic</p>
+                        </a>
+                    </div>
+                </div>
+                <!------------  web-tech  Image ------------------->
+                <div class="col-lg-4  col-md-6 col-12">
+                    <div id="img-container-3">
+                        <a href="bcaSem4_part2.html" target="_blank">
+                            <p class="img-p text-center text-white ">E-Commerce </p>
+                    </div></a>
+
+                </div>
+   <!------------  software Engineering  Image ------------------->
+                <div class="col-lg-6  col-md-6 col-12">
+                    <div id="img-container-4">
+                        <a href="bcaSem4_part2.html" target="_blank">
+                            <p class=" text-center text-white img-p text-capitalize"> Software Testing</p>
+                        </a>
+                    </div>
+                </div>
+             <!------------  Computer networking  Image ------------------->
+                <div class="col-lg-6 col-md-6  col-12">
+                    <div id="img-container-5">
+                        <a href="bcaSem4_part3.html" target="_blank">
+                            <p class=" text-center text-white img-p text-capitalize">Web based programming</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+          
+         
+          
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <h1 class="my-5">Programme Syllabus </h1>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <a href="https://www.cpj.edu.in/wp-content/uploads/2018/05/BCA-Syllabus.pdf"><input type="button"
+                        value="Download syllabus !!" class="btn btn-primary my-5"> </a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <section id="maths">
+        <div class="container">
+            <h4>B.C.A : Fifth Semester <span class="text-warning"> Operating System [V]</span> </h4>
+            <hr>
+            <div class="container">
+                <h3 class="text-center"> Operating System [V] Syllabus</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-12  my-5">
+                        <!------------  Maths  Syllabus   Image  ------------->
+                        <img src="syllabus/maths.png" alt="Maths Syllabus" class="w-60 img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class=" ">Unit 1 - Introduction</h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="290" height="200"
+                                src="https://www.youtube.com/embed/ODbTpgaeV0M?list=PLbu_fGT0MPssMPJuhGZfYKn6MVqcDUjwJ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Permutation & Combination</p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="200" src="https://www.youtube.com/embed/czLZ47q1KJM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Repetition & No-Repetition </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="200" src="https://www.youtube.com/embed/anfTWtQ8f8w"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Binomial Theorem </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="290" height=" 200"
+                                src="https://www.youtube.com/embed/x7SUgS9gUzE?list=RDCMUCZNNx4KYmCkwxCLdsHyWqQA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Probablity </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="200" src="https://www.youtube.com/embed/x7SUgS9gUzE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Conditional Probablity </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="200" src="https://www.youtube.com/embed/liyMYkARQuk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Baye's Theorem </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--------  UNIT 2  MATHS  ----->
+            <div class="container my-5">
+                <h3 class=" ">Unit 2 - Probablity And Distribution </h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="290" height="200" src="https://www.youtube.com/embed/pCbFNf0NNhQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="290" height="300" src="https://www.youtube.com/embed/mm1Z_n4R5E4"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Mean & Varience for random variables </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/H2Ji-Q4MfqU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Mathematical Expectaion </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/gT26Y_VJmOM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Moment Generating Function </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/vqojqDds_eo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Binomial Distribution </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/sWz7wG2IyZU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Poisson Distribution </p>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/lBlq6t9MLOg"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 7 . Normal Distribution </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------ UNIT 3 ------------>
+            <div class="container my-5">
+                <h3 class=" ">Unit 3 - INTERPOLATION </h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/PBjGdQOghJE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Operators </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/1pJYZX-tgi0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Forward Difference Operator</p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/0fECWZIxNv4"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Backward Difference Operator </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/8T9X-xU2dSM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Dividend Difference formula </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/BLTS7Qgb6Cg"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Langrange' s Formula </p>
+                        </div>
+                    </div>
+                    <h3 class=" ">Unit 3 - Solution of Non Linear Equation </h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/DMZj48icYnE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . Bisection Method </p>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-4 col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/BgrY0uZRhAI"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . False position Method </p>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-4 col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/rCoABot_tIE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Raphson Method </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!------ ------------     UNIT 4    ------  ----------->
+            <div class="container my-5">
+                <h3 class=" ">Unit 4 - Solution of Linear Simultaneous Equation </h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/Gkit1hUTsX8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Gauss Elimination Method </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/oPkTasoJngA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Jordan Method </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/jPv5pP1kOco"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Jacobi Method </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/gxy6VI1hEfs"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Siedel Method </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/dwu2A3-lTGU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . L.U Decomposition Meethod </p>
+                        </div>
+                    </div>
+
+                    <h3>Numeric Differenciation</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/12KWLvSRNVw"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . Numeric Differenciation </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="243" height="159" src="https://www.youtube.com/embed/iDU104Mk92I"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Numeric Integration,Trapzoidal rule, Simpson Rule </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-----------------section 2   Ends  here    -------------->
+
+    <!---------------------------------    SECTION  2         ----------------------------->
+
+    <section id="java">
+        <div class="container">
+            <h4>B.C.A : Fourth Semester <span class="text-warning"> Java Programming [IV]</span> </h4>
+            <hr>
+            <div class="container">
+                <h3 class="text-center"> Java [IV] Syllabus</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-12  my-5">
+                        <img src="syllabus/java.png" alt="Maths Syllabus" class="w-60 img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class=" ">Unit 1 - Java Programming </h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="250" height="159"
+                                src="https://www.youtube.com/embed/IsLyduxZ9sc?list=PLX9Zi6XTqOKQ7TdRz0QynGIKuMV9Q2H8E"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction to java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/0MFC_Vw9NxY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . DataTypes In java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/lBu02Bf3gFg"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Access Modifier or Specifiers in java </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/lBu02Bf3gFg"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Operator in java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/cO0IfBneyNw"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Control Statement In java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/7r5ZX0ix5BU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Array in java </p>
+                        </div>
+                    </div>
+                    <h3>Object Oriented Programming in java </h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/umvO72HQLmY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . Classes and Objects </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/4rkPvf6hlIA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Method in java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/lBEUbu2M24Q"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Constructor in java </p>
+                        </div>
+                    </div>
+
+                    <h3>Inheritence in java </h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/zJZIm8GDUn8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . What is Inheritence ? </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/bIQMuFPgKpM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Abstract class in java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/lBEUbu2M24Q"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Super keyword in java </p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/DzHGyfZH6fA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . This keywords </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/QLycTYkF8Q8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Method Overloading and overriding in java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/P1qhuqY2HxE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Interface in java </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--------  UNIT 2  JAVA   ----->
+            <div class="container my-5">
+                <h3 class=" ">Unit 2 - Exception Handling </h3>
+                <hr>
+                <!-- Firest  Row -->
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/w-LpMaM0C3I"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para">1 . Introduction to Exception Handling </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/tt03PCplGLE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Unchecked Exception </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/3NJQE3ahngI"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Checked Expectaion </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/0smtwnFZgZw"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Explicit throw</p>
+                        </div>
+                    </div>
+                    <h3>Multi-threaded programming in java</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/Tyur6ZHjg_s"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . Threads in java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/Tyur6ZHjg_s"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Multi-Threading in java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/ikvCkpzNxnw"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Thread class in java </p>
+                        </div>
+
+                    </div>
+                    <!--row   2-->
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/diKAgTWbLO4"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 4 . Use of runnable class </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/Wse4OQLO-PY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 5 . Thread Life cycle </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/ikvCkpzNxnw"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 6 . Priorities in Thread </p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159"
+                                src="https://www.youtube.com/embed/Gd3OimeT0hA?list=PLX9Zi6XTqOKQ7TdRz0QynGIKuMV9Q2H8E"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 7 . Synchronizing in threads </p>
+                        </div>
+                    </div>
+
+                    <h3> Java Libraries</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/NsCrYwEXDQY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . String Method </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12   ">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/kdEx6nkiJv0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . String Buffer Class</p>
+                        </div>
+                    </div>
+                </div>
+                <!------------ UNIT 3 ------------>
+                <div class="container my-5">
+                    <h3 class=" ">Unit 3 - Software Develpoment Using Java </h3>
+                    <hr>
+                    <!-- Firest  Row -->
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/hv3vYUmaZP4"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para">1 . Introduction to Applets</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/VLeJJ110R04"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . Life cycle of applet</p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/TyspQROwLSQ"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 3 . Awt Controls </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12   ">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/ckxo46zuvl8"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 4 . Event Handling </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/R0USRU90TOo"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 5 . Swings </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!------ ------------     UNIT 4    ------  ----------->
+                    <div class="container my-5">
+                        <h3 class=" ">Unit 4 - Networking Basics </h3>
+                        <hr>
+                        <!-- Firest  Row -->
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-4  col-sm-4  col-12 mx-0">
+                                    <iframe width="250" height="159" src="https://www.youtube.com/embed/BqBKEXLqdvI"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para">1 . Socket Programming in java </p>
+                                </div>
+
+                                <div class="col-lg-4  col-sm-4  col-12">
+                                    <iframe width="250" height="159" src="https://www.youtube.com/embed/Fvwousp9aEs"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p class="topic-para"> 2 . Method and inet Address</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Second  Topic -->
+
+
+                        <h3> Java Database Coonectivity (JDBC)</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/6nisljRI610"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 1 . JDBC Architecture </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/-4_yJ4XPWhE"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 2 . JDBC Driver </p>
+                            </div>
+
+                            <div class="col-lg-4  col-sm-4  col-12">
+                                <iframe width="250" height="159" src="https://www.youtube.com/embed/1Uz27N9t0aU"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <p class="topic-para"> 3 . Connecting to Database </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h3> Introduction to Servlets</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/xve6QEgIR-0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 1 . Servelets in Java </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/uAC7j7j1lS8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 2 . Life Cycle of Servelets </p>
+                        </div>
+
+                        <div class="col-lg-4  col-sm-4  col-12">
+                            <iframe width="250" height="159" src="https://www.youtube.com/embed/6OAl-mMkL-Y"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="topic-para"> 3 . Classes in Servelets </p>
+                        </div>
+
+                    </div>
+                </div>
+    </section>
+    <!-----------------                           Footer-           ------------->
+    <footer class=" bg-dark text-white  text-center">
+        <h3 class="text-center  "> &copy; Copyright to EDhub<i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+        <a href="#navbar"><i class=" fa-2x fa fa-level-up float-right mr-0 my-0" aria-hidden="true" id="scroll"></i></a>
+    </footer>
+    <!-------------- bootstrap 4 cdn ---------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
